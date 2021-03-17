@@ -16,6 +16,13 @@ output:
     +'30,31,32,33,34'
 */
 
-function toCsvText(array) {
-   // good luck
+const toCsvText = (array) => {
+   let str1 = '';
+   for(let i = 0; i < array.length; i++) {
+      str1 += array[i].join();
+      if(array[i+1] !== undefined) {
+         str1 += '\n';
+      }
+   }
+   return str1;
 }
